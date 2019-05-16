@@ -8,3 +8,13 @@ C:\Users\yılmaz\source\repos\TelefonRehberi\TelefonRehberi\obj\Debug\TelefonReh
 C:\Users\yılmaz\source\repos\TelefonRehberi\TelefonRehberi\obj\Debug\TelefonRehberi.csproj.CoreCompileInputs.cache
 C:\Users\yılmaz\source\repos\TelefonRehberi\TelefonRehberi\obj\Debug\TelefonRehberi.exe
 C:\Users\yılmaz\source\repos\TelefonRehberi\TelefonRehberi\obj\Debug\TelefonRehberi.pdb
+C:\Users\yılmaz\Desktop\TelefonRehberi\bin\Debug\TelefonRehberi.exe.config
+C:\Users\yılmaz\Desktop\TelefonRehberi\bin\Debug\TelefonRehberi.exe
+C:\Users\yılmaz\Desktop\TelefonRehberi\bin\Debug\TelefonRehberi.pdb
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.csprojAssemblyReference.cache
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.Form1.resources
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.Properties.Resources.resources
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.csproj.GenerateResource.cache
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.csproj.CoreCompileInputs.cache
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.exe
+C:\Users\yılmaz\Desktop\TelefonRehberi\obj\Debug\TelefonRehberi.pdb

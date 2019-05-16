@@ -41,20 +41,22 @@ namespace TelefonRehberi
         {
             try
             {
-                string sorgu = "INSERT INTO Kisiler (telefon,ad,soyad) values (@telefon,@ad,@soyad)";
-                komut = new SqlCommand(sorgu, baglanti);
-                komut.Parameters.AddWithValue("@ad", tb_ad.Text);
-                komut.Parameters.AddWithValue("@soyad", tb_soyad.Text);
-                komut.Parameters.AddWithValue("@telefon",Convert.ToInt32(tb_telefon.Text));
-                baglanti.Open();
-                komut.ExecuteNonQuery();
+                if (tb_telefon.Text != "")
+                {
+                    string sorgu = "INSERT INTO Kisiler (telefon,ad,soyad) values (@telefon,@ad,@soyad)";
+                    komut = new SqlCommand(sorgu, baglanti);
+                    komut.Parameters.AddWithValue("@ad", tb_ad.Text);
+                    komut.Parameters.AddWithValue("@soyad", tb_soyad.Text);
+                    komut.Parameters.AddWithValue("@telefon", tb_telefon.Text); // toInt32 metodu iptal edilip databasede veri türü varchar yapıldı.
+                    baglanti.Open();
+                    komut.ExecuteNonQuery();
+                    MessageBox.Show("Kişi başarıyla eklendi."); // Kişinin eklendiğine dair messageBox eklendi.
+                }
+                else
+                {
+                    MessageBox.Show("Telefon boş bırakılamaz.");
+                }
                 
-
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Yanlış veri türü girdiniz.");
-                tb_telefon.Text = "";
 
             }
             catch (SqlException)
@@ -79,9 +81,10 @@ namespace TelefonRehberi
 
         private void buton_sil_Click(object sender, EventArgs e)
         {
+            
             string sorgu = "delete from Kisiler where ad=@ad";
             komut = new SqlCommand(sorgu, baglanti);
-            komut.Parameters.AddWithValue("@ad",tb_ad.Text);
+            komut.Parameters.AddWithValue("@ad", tb_ad.Text);
             baglanti.Open();
             komut.ExecuteNonQuery();
             baglanti.Close();
